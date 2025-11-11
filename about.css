@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    padding: 15px 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    margin: 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 71px;
+    height: 71px;
+    background-image: url(imgs/logo1.png);
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #F4EFE4;
+    text-decoration: none;
+    font-family: "Quicksand";
+font-size: 18px;
+font-weight: 600;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FF6848;
+}
+
+.watch-btn {
+    background: white;
+    color: #F74822;
+    font-family: "Quicksand";
+font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 34px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.watch-btn:hover {
+    background: #ff5722;
+    color: white;
+}
+
+.search-icon {
+background-image: url(imgs/search.png);
+width: 22px;
+height: 22px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(imgs/hero.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 120px 20px 60px;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2.75px);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 700px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    font-family: "Quicksand";
+}
+
+.hero p {
+    font-family: "Poppins";
+    font-size: 20px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+/* About Section */
+.about-section {
+    background-image: url(imgs/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: "Poppins";
+    color: #000;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.fork-decoration {
+    position: absolute;
+    right: -5px;
+    top: 6%;
+    transform: rotate(-3deg);
+    background-image: url(imgs/ppppp.png);
+    width: 424px;
+    height: 599px;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 20px;
+    background: #f5e6d3;
+}
+
+.features-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+}
+
+.feature-card {
+    text-align: center;
+    padding: 30px;
+}
+
+.feature-icon1 {
+    margin-bottom: 20px;
+    width: 71px;
+height: 104px;
+background-image: url(imgs/cooking1.png);
+}
+.feature-icon2 {
+    width: 144px;
+    height: 91px;
+background-image: url(imgs/cooking2.png);
+margin-bottom: 20px;
+}
+.feature-icon3 {
+    width: 119px;
+    height: 98px;
+    margin-bottom: 20px;
+    background-image: url(imgs/cooking3.png);
+}
+
+.feature-card h3 {
+    font-family: "Quicksand";
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.feature-card p {
+    font-family: "Poppins";
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #ff5722;
+    color: white;
+    padding: 60px 20px 20px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo-text {
+    color: #ff5722;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.footer-section h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.contact-info p {
+    margin-bottom: 12px;
+    opacity: 0.9;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.social-icons a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    opacity: 0.9;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .fork-decoration {
+        display: none;
+    }
+}
