@@ -167,6 +167,11 @@ height: 22px;
 .feature-card {
     text-align: center;
     padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
 }
 
 .feature-icon1 {
@@ -205,7 +210,7 @@ margin-bottom: 20px;
 
 /* Footer */
 footer {
-    background: #ff5722;
+    background: radial-gradient(50% 50% at 50% 50%, #E89E77 0%, #EE8745 50%, #F3662E 75%, #DD4D2F 100%);
     color: white;
     padding: 60px 20px 20px;
 }
@@ -220,26 +225,20 @@ footer {
 }
 
 .footer-logo {
-    width: 80px;
-    height: 80px;
-    background: white;
-    border-radius: 50%;
+    width: 212px;
+    height: 212px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+background-image: url(imgs/logo2.png);
     margin-bottom: 20px;
 }
 
-.footer-logo-text {
-    color: #ff5722;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: italic;
-}
 
 .footer-section h3 {
+    color: #F4EFE4;
+    font-weight: 700;
     margin-bottom: 20px;
     font-size: 20px;
+    font-family: "DM Sans";
 }
 
 .footer-links {
@@ -262,8 +261,10 @@ footer {
 }
 
 .contact-info p {
+    font-size: 18px;
     margin-bottom: 12px;
     opacity: 0.9;
+    font-family: "DM Sans";
 }
 
 .social-icons {
