@@ -1,0 +1,26 @@
+:root{
+    --background-body:#F9DCB0;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    position: relative;
+    background:var(--background-body);
+}
+.first-sec{
+    background-image: url(cbc-sofra/imgs/hero-pic.png);
+    width: 100%;
+    height: 135vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inner-box{
+    width: 100%;
+    height: 1748px;
+    color: var(--background-body);
+}
